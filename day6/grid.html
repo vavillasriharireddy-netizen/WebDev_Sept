@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            background-color: red;
+            text-align: center;
+        }
+        .product{
+            display: grid;
+            /* grid-template-columns: 200px 200px 150px ; */
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap: 10px;
+            /* grid-template-rows: repeat(); */
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="box">cake</div>
+        <div class="box">cake-price</div>
+        <div class="box">cookie</div>
+        <div class="box">cookie-price</div>
+        <div class="box">pastry</div>
+        <div class="box">pastry-price</div>
+    </div>
+</body>
+</html>
