@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // if bill is more than 500 give 10% discount
+
+
+        let cafeMenu = [
+            {name:"Coffee",price:200},
+            {name:"Samosa",price:150},
+            {name:"Cappuccino",price:200},
+            {name:"Latte",price:200},
+        ]
+
+        console.log("User Choice");
+        console.log("1st Product",cafeMenu[0].name,"2nd Product",cafeMenu[1].name);
+        console.log("1st Product",cafeMenu[0].price,"2nd Product",cafeMenu[1].price);
+
+        let totalBill 
+        if(totalBill>=150){
+            totalBill-=totalBill/10
+            console.log("You are eligible for Discount");
+            
+        }
+        else{
+            console.log("You are not eligible for Discount");
+        }
+        console.log("Final bill is ",totalBill);
+        
+
+
+    </script>
+</body>
+</html>
