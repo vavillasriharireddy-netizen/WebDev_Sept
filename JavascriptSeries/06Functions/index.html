@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="">
+        <input id="username" type="text" >
+        <button onclick=greet()>greet</button>   
+    </form>
+
+    <script>
+
+        function greet(){
+            // let val = document.getElementById("username").value
+            console.log("Hello Good Morning");
+            alert("Welcome Back ",val)
+        }
+        // greet();
+
+        function greetName(name){
+            alert("Welcome Back ",name)
+        }
+
+        function bill(price, quantity){     // how many arguments we pass for a function if there
+            return price*quantity           // are more than one then the last argument is considered as return
+        }
+        let getBill = bill(100,2)
+        console.log(getBill);
+
+        let add = (a,b)=>{  //arrow function
+            console.log(a+b);
+            console.log(a,b);
+        }
+        add(5,10)
+        
+        let oddOrEven = (a)=>{
+            if(a%2===1) return "Odd Number"
+            return "Even Number"
+        }
+        console.log(oddOrEven(32));
+
+        let primeNumber = (a)=>{
+            count = 0;
+            if(a<=1)
+                return a,"Neither Prime Nor Composite"
+            else{
+                for(let i = 2;i<=a;i++){
+                    if(a%i===0){
+                        count++
+                    }
+                }
+                if(count>0 || a===2){
+                    return a, "Prime Number"
+                }
+                else
+                    return a,"Composite Number"
+            }
+        }
+        console.log(primeNumber(3));
+        
+
+        let revString = (name) =>{
+            let rev = ""
+            for(let i = 0;i<name.length;i++){
+                rev=name[i]+rev;
+            }
+            return rev
+        }
+        console.log(revString("hari"));
+        
+        
+
+
+
+    </script>
+</body>
+</html>

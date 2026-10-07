@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let name = "Hari"
+        let age = 24;
+
+        // console.log("My name is "+name+" and my age is "+age);
+        
+
+        //Template String ` ${} `
+        console.log(`My name is ${name} and my age is ${age}`);
+
+        setTimeout(()=>{
+            console.log("Hello i will run after five seconds");
+            confirm("Are you sure")
+        },5000)
+
+        // setInterval(()=>{
+        //     console.log("Hello i will run after every 2 seconds");
+        // },2000)
+        
+
+        //spread operator
+
+        let fruits = ["Apple","Banana","Orange"]
+        let veg = ["Tomato","Potato"]
+        
+        let groceries = [...fruits,...veg]
+        console.log(groceries);
+
+        let items = 10
+        
+
+    </script>
+</body>
+</html>
