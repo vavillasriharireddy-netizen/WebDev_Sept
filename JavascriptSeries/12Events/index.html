@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Add to Cart</button>
+
+    <p id="res"></p>
+    <p id="count"></p>
+
+    <script>
+        
+        const button = document.getElementById("btn")
+        const res = document.getElementById("res")
+        const count = document.getElementById("count")
+        let num  = 0
+        count.textContent = num 
+
+        button.addEventListener('click',()=>{
+            res.textContent="Added to Cart"
+            num++;
+            count.textContent = num
+        })
+
+    </script>
+</body>
+</html>
