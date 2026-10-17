@@ -57,7 +57,7 @@ students.forEach(function(student){
     const status = document.createElement("p")
     status.textContent = "Status : "+student.status
 
-    card.appendChild(name)
+    card.appeintndChild(name)
     card.appendChild(course)
     card.appendChild(skill)
     card.appendChild(status)
